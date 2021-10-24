@@ -4,8 +4,8 @@
       <tr>
         <div class="card day d-inline-block" v-for="day in 6" v-bind:key="day" style="width: 15rem">
           <div class="card-body">
-            <h5 class="card-title">{{ week[(date.getDay() - 1) + day] }}</h5>
-            <p class="card-text">{{ date.getDate() + day }}</p>
+            <h5 class="card-title">{{ week[(date.getDay() - 2) + day] }}</h5>
+            <p class="card-text">{{ (date.getDate() - 1) + day }}</p>
           </div>
         </div>
       </tr>
